@@ -1,26 +1,27 @@
 export const webAppWorkflowSidebar = [
   {
     type: 'category',
-    label: "Let's Start",
+    label: "Web application workflow",
     items: [
-      'WebAppWorkflow/webAppWorkflow1',
-      'WebAppWorkflow/webAppWorkflow2',
-      'WebAppWorkflow/webAppWorkflow3',
-      'WebAppWorkflow/webAppWorkflow4',
+      'WebAppWorkflow/1-web-workflow-intro',
+      'WebAppWorkflow/2-restaurant-analogy',
+      'WebAppWorkflow/3-app-components',
+      'WebAppWorkflow/4-comparison-table',
       {
         type: 'category',
-        label: 'Login Example',
+        label: 'TASK | Login Example',
         items: [
-          'WebAppWorkflow/LoginExample/webAppWorkflow5',
-          'WebAppWorkflow/LoginExample/webAppWorkflow6',
-          'WebAppWorkflow/LoginExample/webAppWorkflow7',
-          'WebAppWorkflow/LoginExample/webAppWorkflow8',
-          'WebAppWorkflow/LoginExample/webAppWorkflow9',
-          'WebAppWorkflow/LoginExample/webAppWorkflow10',
+          'WebAppWorkflow/LoginExample/5a-login-form',
+          'WebAppWorkflow/LoginExample/5-fe-ux-ui',
+          'WebAppWorkflow/LoginExample/6-fe-js',
+          'WebAppWorkflow/LoginExample/7-api',
+          'WebAppWorkflow/LoginExample/8-be',
+          'WebAppWorkflow/LoginExample/9-database',
+          'WebAppWorkflow/LoginExample/10-complete-workflow',
         ],
       },
-      'WebAppWorkflow/webAppWorkflow11',
-      // 'WebAppWorkflow/webAppWorkflow_login',
+      'WebAppWorkflow/11-developer-tools',
+
     ],
   },
 ];
