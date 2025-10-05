@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstart_school_wiki=self.webpackChunkstart_school_wiki||[]).push([[5392],{5392:(s,e,t)=>{t.d(e,{createGitGraphServices:()=>a.b});var a=t(4087);t(8198)}}]);

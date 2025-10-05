@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstart_school_wiki=self.webpackChunkstart_school_wiki||[]).push([[4504],{4504:(e,s,a)=>{a.d(s,{createTreemapServices:()=>c.d});var c=a(3758);a(8198)}}]);
