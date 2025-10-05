@@ -15,7 +15,7 @@ const config = {
   organizationName: 'StartSchoolHQ',
   projectName: 'crossteam-collab',
   url: 'https://startschoolhq.github.io',
-  baseUrl: '/crossteam-collabo/',
+  baseUrl: '/crossteam-collab/',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'warn',
