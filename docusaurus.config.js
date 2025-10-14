@@ -49,7 +49,11 @@ const config = {
 
   themeConfig: {
     navbar: {
-      title: 'Cross team collaboration',
+      // title: 'Cross team collaboration',
+      logo: {
+        alt: 'Cross team collaboration',
+        src: 'img/StartSchool_Logo_pink.png'
+      },
       items: [
         {
           type: 'docSidebar',

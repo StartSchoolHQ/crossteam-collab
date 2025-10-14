@@ -11,6 +11,10 @@ export const feDevelopmentSidebar = [
         'FrontendDevelopment/html-intro',
         'FrontendDevelopment/css-intro',
         'FrontendDevelopment/js-intro',
+        'FrontendDevelopment/session-plan',
+        'FrontendDevelopment/session-task',
+        'FrontendDevelopment/extra-chall',
+        
         // {
         //     type: 'category',
         //     label: 'Module 1 | HTML',
