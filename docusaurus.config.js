@@ -4,6 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Frontend Development',
+  favicon: 'img/StartSchool_round_pink.png',
 
   future: {
     v4: {
@@ -55,6 +56,12 @@ const config = {
           sidebarId: 'webAppWorkflowSidebar',
           position: 'left',
           label: 'Web app workflow',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'feDevelopmentSidebar',
+          position: 'left',
+          label: 'Frontend development',
         },
       ],
     },

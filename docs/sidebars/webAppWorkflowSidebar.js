@@ -2,6 +2,10 @@ export const webAppWorkflowSidebar = [
   {
     type: 'category',
     label: "Web application workflow",
+    link: {
+      type: 'generated-index',
+      description: 'Web application workflow',
+    },
     items: [
       'WebAppWorkflow/1-web-workflow-intro',
       'WebAppWorkflow/2-restaurant-analogy',
