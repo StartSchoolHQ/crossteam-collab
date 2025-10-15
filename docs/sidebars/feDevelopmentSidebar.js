@@ -11,18 +11,27 @@ export const feDevelopmentSidebar = [
         'FrontendDevelopment/html-intro',
         'FrontendDevelopment/css-intro',
         'FrontendDevelopment/js-intro',
-        'FrontendDevelopment/session-plan',
-        'FrontendDevelopment/session-task',
-        'FrontendDevelopment/extra-chall',
+        // 'FrontendDevelopment/session-plan',
+        // 'FrontendDevelopment/session-task',
         
-        // {
-        //     type: 'category',
-        //     label: 'Module 1 | HTML',
-        //     items: [
-        //         'FrontendDevelopment/Module1/1-html-intro',
+        {
+            type: 'category',
+            label: 'Practical task | First web app',
+            link: {
+              type: 'generated-index',
+              description: 'First web app',
+            },
+            items: [
+                'FrontendDevelopment/Task1/session-plan',
+                'FrontendDevelopment/Task1/session-task',
+                'FrontendDevelopment/Task1/session-task-html',
+                'FrontendDevelopment/Task1/session-task-css',
+                'FrontendDevelopment/Task1/session-task-js',
+                'FrontendDevelopment/Task1/extra-chall',
+
              
-        //     ],
-        // },
+            ],
+        },
       ],
     },
   ];
