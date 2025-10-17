@@ -14,19 +14,19 @@ export const versionManagementSidebar = [
         'VersionManagement/git-workflow',
         'VersionManagement/git-commands',
         
-        // {
-        //   type: 'category',
-        //   label: 'TASK | Login Example',
-        //   items: [
-        //     'VersionManagement/LoginExample/5a-login-form',
-        //     'VersionManagement/LoginExample/5-fe-ux-ui',
-        //     'VersionManagement/LoginExample/6-fe-js',
-        //     'VersionManagement/LoginExample/7-api',
-        //     'VersionManagement/LoginExample/8-be',
-        //     'VersionManagement/LoginExample/9-database',
-        //     'VersionManagement/LoginExample/10-complete-workflow',
-        //   ],
-        // },
+        {
+          type: 'category',
+          label: 'TASK | Practical Git & GitHub use',
+          items: [
+            'VersionManagement/Task/task-github',
+            // 'VersionManagement/LoginExample/5-fe-ux-ui',
+            // 'VersionManagement/LoginExample/6-fe-js',
+            // 'VersionManagement/LoginExample/7-api',
+            // 'VersionManagement/LoginExample/8-be',
+            // 'VersionManagement/LoginExample/9-database',
+            // 'VersionManagement/LoginExample/10-complete-workflow',
+          ],
+        },
   
       ],
     },
