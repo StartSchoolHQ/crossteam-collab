@@ -11,15 +11,11 @@ export const feDevelopmentSidebar = [
         'FrontendDevelopment/html-intro',
         'FrontendDevelopment/css-intro',
         'FrontendDevelopment/js-intro',
-        // 'FrontendDevelopment/session-plan',
-        // 'FrontendDevelopment/session-task',
-        
         {
             type: 'category',
             label: 'Practical task | First web app',
             link: {
               type: 'generated-index',
-              description: 'First web app',
             },
             items: [
                 'FrontendDevelopment/Task1/session-plan',

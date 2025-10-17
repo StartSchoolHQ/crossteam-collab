@@ -67,6 +67,12 @@ const config = {
           position: 'left',
           label: 'Frontend development',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'versionManagementSidebar',
+          position: 'left',
+          label: 'Version management',
+        },
       ],
     },
     footer: {
