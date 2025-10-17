@@ -4,10 +4,15 @@ export const versionManagementSidebar = [
       label: "Version management",
       link: {
         type: 'generated-index',
-        description: 'Version management',
       },
       items: [
+        'VersionManagement/version-intro',
         'VersionManagement/git-intro',
+        'VersionManagement/github-intro',
+        'VersionManagement/why-use',
+        'VersionManagement/git-concepts',
+        'VersionManagement/git-workflow',
+        'VersionManagement/git-commands',
         
         // {
         //   type: 'category',

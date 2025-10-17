@@ -49,31 +49,30 @@ const config = {
 
   themeConfig: {
     navbar: {
-      // title: 'Cross team collaboration',
       logo: {
         alt: 'Cross team collaboration',
         src: 'img/StartSchool_Logo_pink.png'
       },
-      items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'webAppWorkflowSidebar',
-          position: 'left',
-          label: 'Web app workflow',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'feDevelopmentSidebar',
-          position: 'left',
-          label: 'Frontend development',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'versionManagementSidebar',
-          position: 'left',
-          label: 'Version management',
-        },
-      ],
+      // items: [
+      //   {
+      //     type: 'docSidebar',
+      //     sidebarId: 'webAppWorkflowSidebar',
+      //     position: 'left',
+      //     label: 'Web app workflow',
+      //   },
+      //   {
+      //     type: 'docSidebar',
+      //     sidebarId: 'feDevelopmentSidebar',
+      //     position: 'left',
+      //     label: 'Frontend development',
+      //   },
+      //   {
+      //     type: 'docSidebar',
+      //     sidebarId: 'versionManagementSidebar',
+      //     position: 'left',
+      //     label: 'Version management',
+      //   },
+      // ],
     },
     footer: {
       style: 'dark',
