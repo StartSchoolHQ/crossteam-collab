@@ -13,20 +13,27 @@ export const versionManagementSidebar = [
         'VersionManagement/git-concepts',
         'VersionManagement/git-workflow',
         'VersionManagement/git-commands',
+        {
+            type: 'category',
+            label: 'TASK 1 | Practical Git & GitHub use',
+            items: [
+              'VersionManagement/Task1/git-github-exploration-task',
+              'VersionManagement/Task1/git-github-exploration-repo',
+              'VersionManagement/Task1/git-github-exploration-commits',
+
+             
+            ],
+          },
         
         {
           type: 'category',
-          label: 'TASK | Practical Git & GitHub use',
+          label: 'TASK 2 | Practical Git & GitHub use',
           items: [
             'VersionManagement/Task/task-github',
-            // 'VersionManagement/LoginExample/5-fe-ux-ui',
-            // 'VersionManagement/LoginExample/6-fe-js',
-            // 'VersionManagement/LoginExample/7-api',
-            // 'VersionManagement/LoginExample/8-be',
-            // 'VersionManagement/LoginExample/9-database',
-            // 'VersionManagement/LoginExample/10-complete-workflow',
           ],
         },
+        'VersionManagement/git-cheatsheet',
+
   
       ],
     },
