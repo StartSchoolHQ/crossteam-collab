@@ -15,7 +15,7 @@ export const versionManagementSidebar = [
         'VersionManagement/git-commands',
         {
             type: 'category',
-            label: 'TASK 1 | Practical Git & GitHub use',
+            label: 'TASK 1 | Practical GitHub use',
             items: [
               'VersionManagement/Task1/git-github-exploration-task',
               'VersionManagement/Task1/git-github-exploration-repo',
@@ -30,9 +30,9 @@ export const versionManagementSidebar = [
         
         {
           type: 'category',
-          label: 'TASK 2 | Practical Git & GitHub use',
+          label: 'TASK 2 | Connecting Git and GitHub',
           items: [
-            'VersionManagement/Task/task-github',
+            'VersionManagement/Task2/task-github',
           ],
         },
         'VersionManagement/git-cheatsheet',
