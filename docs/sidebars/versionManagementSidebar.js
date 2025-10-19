@@ -20,7 +20,7 @@ export const versionManagementSidebar = [
               'VersionManagement/Task1/git-github-exploration-task',
               'VersionManagement/Task1/git-github-exploration-repo',
               'VersionManagement/Task1/git-github-exploration-commits',
-              'VersionManagement/Task1/git-github-exploration-content',
+              'VersionManagement/Task1/git-github-exploration-course-content',
               'VersionManagement/Task1/git-github-exploration-branches',
               'VersionManagement/Task1/git-github-exploration-content',
               'VersionManagement/Task1/git-github-exploration-real',
