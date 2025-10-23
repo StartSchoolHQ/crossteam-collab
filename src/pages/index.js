@@ -35,6 +35,12 @@ const sections = [
     description: 'Master Git and GitHub for code collaboration',
     link: '/docs/category/version-management',
   },
+  {
+    title: 'Session 4',
+    subtitle: 'Understanding APIs', 
+    description: 'How applications communicate',
+    link: '/docs/category/version-management',
+  },
 ];
 
 function SectionCard({title, subtitle, description, link}) {

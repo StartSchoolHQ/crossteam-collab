@@ -2,6 +2,7 @@
 import { webAppWorkflowSidebar } from './docs/sidebars/webAppWorkflowSidebar';
 import { feDevelopmentSidebar } from './docs/sidebars/feDevelopmentSidebar';
 import { versionManagementSidebar } from './docs/sidebars/versionManagementSidebar';
+import { apiSidebar } from './docs/sidebars/apiSidebar';
 
 
 
@@ -11,7 +12,8 @@ import { versionManagementSidebar } from './docs/sidebars/versionManagementSideb
 const sidebars = {
   webAppWorkflowSidebar,
   feDevelopmentSidebar,
-  versionManagementSidebar
+  versionManagementSidebar,
+  apiSidebar,
 };
 
 export default sidebars;
