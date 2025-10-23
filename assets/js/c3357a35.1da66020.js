@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkstart_school_wiki=self.webpackChunkstart_school_wiki||[]).push([[7893],{9158:a=>{a.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"APIs","slug":"/category/apis","permalink":"/crossteam-collab/docs/category/apis","sidebar":"apiSidebar","navigation":{"next":{"title":"API","permalink":"/crossteam-collab/docs/apis/api-intro"}}}}')}}]);
