@@ -39,7 +39,7 @@ const sections = [
     title: 'Session 4',
     subtitle: 'Understanding APIs', 
     description: 'How applications communicate',
-    link: '/docs/category/version-management',
+    link: '/docs/category/apis',
   },
 ];
 
