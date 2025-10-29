@@ -10,10 +10,11 @@ export const apiSidebar = [
         'apis/api-types',
         'apis/api-http',
         'apis/api-json',
-        'apis/req-resp',
         'apis/http-status',
         'apis/api-fetch',
+        'apis/req-resp',
         'apis/api-why',
+        
         {
             type: 'category',
             label: 'TASK 1 | Let us fetch some data',
