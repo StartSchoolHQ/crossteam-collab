@@ -41,6 +41,12 @@ const sections = [
     description: 'How applications communicate',
     link: '/docs/category/apis',
   },
+  {
+    title: 'Session 5',
+    subtitle: 'Understanding Backend', 
+    description: 'Where the magic happens',
+    link: '/docs/category/backend',
+  },
 ];
 
 function SectionCard({title, subtitle, description, link}) {
