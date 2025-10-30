@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-BE/Task/be-task9" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Databases | Frontend Development</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://startschoolhq.github.io/crossteam-collab/docs/BE/Task/be-task9"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Databases | Frontend Development"><meta data-rh="true" name="description" content="Understanding databases"><meta data-rh="true" property="og:description" content="Understanding databases"><link data-rh="true" rel="icon" href="/crossteam-collab/img/StartSchool_round_pink.png"><link data-rh="true" rel="canonical" href="https://startschoolhq.github.io/crossteam-collab/docs/BE/Task/be-task9"><link data-rh="true" rel="alternate" href="https://startschoolhq.github.io/crossteam-collab/docs/BE/Task/be-task9" hreflang="en"><link data-rh="true" rel="alternate" href="https://startschoolhq.github.io/crossteam-collab/docs/BE/Task/be-task9" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Backend","item":"https://startschoolhq.github.io/crossteam-collab/docs/category/backend"},{"@type":"ListItem","position":2,"name":"Databases","item":"https://startschoolhq.github.io/crossteam-collab/docs/BE/Task/be-task9"}]}</script><link rel="stylesheet" href="/crossteam-collab/assets/css/styles.dea6c9b9.css">
+<script src="/crossteam-collab/assets/js/runtime~main.c5290d86.js" defer="defer"></script>
+<script src="/crossteam-collab/assets/js/main.47744a48.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/crossteam-collab/img/StartSchool_Logo_pink.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><a class="navbar__brand" href="/crossteam-collab/"><div class="navbar__logo"><img src="/crossteam-collab/img/StartSchool_Logo_pink.png" alt="Cross team collaboration" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/crossteam-collab/img/StartSchool_Logo_pink.png" alt="Cross team collaboration" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div></a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/crossteam-collab/docs/category/backend">Backend</a><button aria-label="Collapse sidebar category &#x27;Backend&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/be-intro">Intro</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/be-db">Databases</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/be-sec">Security</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/be-lang">Languages</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/be-api">Backend connection to frontend</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/be-patterns">Backend patterns</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/be-scen">Real world scenarios</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/be-key">Key takeaways</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task1">TASK 1 | </a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task1">Databases task intro</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task2">Task option A</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task3">Task option B</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task4">Databases</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task5">Databases</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task6">Databases</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task7">Databases</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task8">Databases</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/crossteam-collab/docs/BE/Task/be-task9">Databases</a></li></ul></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/crossteam-collab/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/crossteam-collab/docs/category/backend"><span>Backend</span></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">TASK 1 | </span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Databases</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Databases</h1></header><h2 class="anchor anchorWithStickyNavbar_LWe7" id="part-3-your-task---trace-three-scenarios">Part 3: Your Task - Trace Three Scenarios<a href="#part-3-your-task---trace-three-scenarios" class="hash-link" aria-label="Direct link to Part 3: Your Task - Trace Three Scenarios" title="Direct link to Part 3: Your Task - Trace Three Scenarios">​</a></h2>
+<p>Now trace the complete flow for each scenario below.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-1-successful-order">Scenario 1: Successful Order<a href="#scenario-1-successful-order" class="hash-link" aria-label="Direct link to Scenario 1: Successful Order" title="Direct link to Scenario 1: Successful Order">​</a></h3>
+<p><strong>Initial Database State:</strong></p>
+<p>The products array contains three items:</p>
+<ul>
+<li>Product 1: Laptop with price 999 and stock 5</li>
+<li>Product 2: Mouse with price 25 and stock 50</li>
+<li>Product 3: Keyboard with price 75 and stock 30</li>
+</ul>
+<p>The orders array is empty.</p>
+<p><strong>User Action:</strong></p>
+<ul>
+<li>User enters Product ID: 1</li>
+<li>User enters Quantity: 2</li>
+<li>User enters Name: John Doe</li>
+<li>User clicks Place Order button</li>
+</ul>
+<p><strong>Your Task:</strong></p>
+<ul>
+<li>Show what app.js sends to server.js</li>
+<li>Show all backend processing steps in server.js</li>
+<li>Show what database operations happen (read, write, update)</li>
+<li>Show what response server.js sends back</li>
+<li>Show what app.js does with the response</li>
+<li>Show what user sees in index.html</li>
+<li>Show the final database state in server.js</li>
+<li>Explain what changed and why</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-2-insufficient-stock">Scenario 2: Insufficient Stock<a href="#scenario-2-insufficient-stock" class="hash-link" aria-label="Direct link to Scenario 2: Insufficient Stock" title="Direct link to Scenario 2: Insufficient Stock">​</a></h3>
+<p><strong>Initial Database State:</strong></p>
+<p>The products array contains one item:</p>
+<ul>
+<li>Product 2: Mouse with price 25 and stock 3</li>
+</ul>
+<p>The orders array is empty.</p>
+<p><strong>User Action:</strong></p>
+<ul>
+<li>User enters Product ID: 2</li>
+<li>User enters Quantity: 5</li>
+<li>User enters Name: Jane Smith</li>
+<li>User clicks Place Order button</li>
+</ul>
+<p><strong>Your Task:</strong></p>
+<ul>
+<li>Show what app.js sends</li>
+<li>Show backend processing in server.js until error is detected</li>
+<li>Show what database operations happen (if any)</li>
+<li>Show what error response server.js sends back</li>
+<li>Show what app.js does with the error</li>
+<li>Show what user sees in index.html</li>
+<li>Show the final database state in server.js</li>
+<li>Explain why nothing changed (or what did change)</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="scenario-3-product-does-not-exist">Scenario 3: Product Does Not Exist<a href="#scenario-3-product-does-not-exist" class="hash-link" aria-label="Direct link to Scenario 3: Product Does Not Exist" title="Direct link to Scenario 3: Product Does Not Exist">​</a></h3>
+<p><strong>Initial Database State:</strong></p>
+<p>The products array contains one item:</p>
+<ul>
+<li>Product 1: Laptop with price 999 and stock 5</li>
+</ul>
+<p>The orders array is empty.</p>
+<p><strong>User Action:</strong></p>
+<ul>
+<li>User enters Product ID: 99</li>
+<li>User enters Quantity: 1</li>
+<li>User enters Name: Bob Johnson</li>
+<li>User clicks Place Order button</li>
+</ul>
+<p><strong>Your Task:</strong></p>
+<ul>
+<li>Show what app.js sends</li>
+<li>Show backend processing in server.js until error is detected</li>
+<li>Show what database operations happen (if any)</li>
+<li>Show what error response server.js sends back</li>
+<li>Show what app.js does with the error</li>
+<li>Show what user sees in index.html</li>
+<li>Show the final database state in server.js</li>
+<li>Explain at which step the backend caught the problem</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="part-4-answer-these-questions">Part 4: Answer These Questions<a href="#part-4-answer-these-questions" class="hash-link" aria-label="Direct link to Part 4: Answer These Questions" title="Direct link to Part 4: Answer These Questions">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-file-structure">Understanding File Structure<a href="#understanding-file-structure" class="hash-link" aria-label="Direct link to Understanding File Structure" title="Direct link to Understanding File Structure">​</a></h3>
+<p><strong>Question 1</strong>: What is the purpose of each file?</p>
+<ul>
+<li>index.html:</li>
+<li>style.css:</li>
+<li>app.js:</li>
+<li>server.js:</li>
+</ul>
+<p><strong>Question 2</strong>: Which files run in the browser (frontend)?</p>
+<p><strong>Question 3</strong>: Which file runs on the server (backend)?</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-frontend-backend-communication">Understanding Frontend-Backend Communication<a href="#understanding-frontend-backend-communication" class="hash-link" aria-label="Direct link to Understanding Frontend-Backend Communication" title="Direct link to Understanding Frontend-Backend Communication">​</a></h3>
+<p><strong>Question 4</strong>: Why does the frontend (app.js) not access the database directly? What would happen if it did? What security problems would this create?</p>
+<p><strong>Question 5</strong>: What data does app.js send to server.js? Look at the fetch() call in app.js and list everything that is sent.</p>
+<p><strong>Question 6</strong>: What does server.js send back to app.js? Look at the res.json() calls in server.js. Compare successful vs error responses.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-validation">Understanding Validation<a href="#understanding-validation" class="hash-link" aria-label="Direct link to Understanding Validation" title="Direct link to Understanding Validation">​</a></h3>
+<p><strong>Question 7</strong>: At which step in server.js does the backend detect insufficient stock? Identify the line number and code snippet.</p>
+<p><strong>Question 8</strong>: Why does validation happen in server.js and not in app.js? The HTML form has required and min attributes. Why is frontend validation not enough? What could a malicious user do if only frontend validated?</p>
+<p><strong>Question 9</strong>: List all validation checks in the POST /api/orders endpoint in server.js</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-database-operations">Understanding Database Operations<a href="#understanding-database-operations" class="hash-link" aria-label="Direct link to Understanding Database Operations" title="Direct link to Understanding Database Operations">​</a></h3>
+<p><strong>Question 10</strong>: In Scenario 1 (successful order), trace all database operations in server.js. What gets read from the products array? What gets written to the orders array? What gets updated in the products array? In what order do these happen?</p>
+<p><strong>Question 11</strong>: In Scenario 2 (insufficient stock), does anything change in the database (in server.js)? Explain why. At what point does the backend stop processing?</p>
+<p><strong>Question 12</strong>: What would happen if two customers ordered the last laptop at exactly the same time? Both frontends send requests simultaneously to server.js. Both reach the stock check at the same time. What is the problem with the current code? How would a real database prevent this?</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-http">Understanding HTTP<a href="#understanding-http" class="hash-link" aria-label="Direct link to Understanding HTTP" title="Direct link to Understanding HTTP">​</a></h3>
+<p><strong>Question 13</strong>: What HTTP methods are used in this application? List them and explain what GET and POST do.</p>
+<p><strong>Question 14</strong>: What HTTP status codes are used in server.js? List all status codes. What do 200, 201, 400, and 404 mean?</p>
+<p><strong>Question 15</strong>: Compare the response structure for success vs error in server.js. Success responses have: success (true), message, and order object. Error responses have: success (false) and message. What is different? Why does the error response not include an order? How does app.js use the success field?</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="understanding-styling">Understanding Styling<a href="#understanding-styling" class="hash-link" aria-label="Direct link to Understanding Styling" title="Direct link to Understanding Styling">​</a></h3>
+<p><strong>Question 16</strong>: What happens if you delete the link to style.css in index.html? Try it in your mind or actually test it. What would the page look like?</p>
+<p><strong>Question 17</strong>: Find in style.css where the success and error messages are styled. What is the success message color? What is the error message color? Why are they different colors?</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="real-world-considerations">Real-World Considerations<a href="#real-world-considerations" class="hash-link" aria-label="Direct link to Real-World Considerations" title="Direct link to Real-World Considerations">​</a></h3>
+<p><strong>Question 18</strong>: What is wrong with this mock database approach in server.js? List at least 3 problems. What happens if the server restarts?</p>
+<p><strong>Question 19</strong>: How would this be different with a real database like PostgreSQL? What would replace the JavaScript arrays? What would replace the find() and push() operations? What additional features would we have?</p>
+<p><strong>Question 20</strong>: What happens if the network is slow or fails? User clicks Place Order in index.html. Request from app.js takes 30 seconds to reach server.js. What does the user see? What should app.js do?</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="part-5-bonus-challenge-optional">Part 5: Bonus Challenge (Optional)<a href="#part-5-bonus-challenge-optional" class="hash-link" aria-label="Direct link to Part 5: Bonus Challenge (Optional)" title="Direct link to Part 5: Bonus Challenge (Optional)">​</a></h2>
+<p>Extend the application to let users view all orders.</p>
+<p><strong>Task</strong>: Add a button that loads all orders from the backend and displays them on the page.</p>
+<p><strong>What to add:</strong></p>
+<p>In index.html - add a section with:</p>
+<ul>
+<li>An h2 heading for All Orders</li>
+<li>A button with id load-orders-btn</li>
+<li>A div with id orders-container</li>
+</ul>
+<p>In style.css - add styling for:</p>
+<ul>
+<li>.order class with white background, border, padding, margin, border-radius, and box-shadow</li>
+<li>.order h3 with green color</li>
+</ul>
+<p>In app.js - add a loadOrders function that:</p>
+<ul>
+<li>Makes a GET request to /api/orders</li>
+<li>Displays the orders in the orders-container div</li>
+<li>Shows order ID, customer name, product, quantity, and total for each order</li>
+<li>Handles errors appropriately</li>
+</ul>
+<p>The GET /api/orders endpoint already exists in server.js.</p>
+<p><strong>Your Complete Task:</strong></p>
+<ol>
+<li>Implement the loadOrders() function in app.js</li>
+<li>Make it fetch orders from the backend</li>
+<li>Display them nicely on the page</li>
+<li>Test by placing some orders first, then clicking Load Orders</li>
+<li>Trace the complete flow like you did for the three scenarios</li>
+</ol>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="answer-template">Answer Template<a href="#answer-template" class="hash-link" aria-label="Direct link to Answer Template" title="Direct link to Answer Template">​</a></h2>
+<p>Use this template for each scenario:</p>
+<p><strong>SCENARIO NAME:</strong></p>
+<p><strong>INITIAL DATABASE STATE:</strong></p>
+<ul>
+<li>products array: (describe items)</li>
+<li>orders array: (empty or describe items)</li>
+</ul>
+<p><strong>USER ACTION:</strong></p>
+<ul>
+<li>User enters: (list inputs)</li>
+<li>User clicks: Place Order button</li>
+</ul>
+<p><strong>FRONTEND SENDS:</strong></p>
+<ul>
+<li>Method: POST</li>
+<li>URL: /api/orders</li>
+<li>Body contains: productId, quantity, customerName</li>
+</ul>
+<p><strong>BACKEND RECEIVES:</strong></p>
+<ul>
+<li>Request arrives at app.post endpoint</li>
+<li>Extracts: productId, quantity, customerName</li>
+</ul>
+<p><strong>BACKEND VALIDATES:</strong></p>
+<ul>
+<li>Check required fields: (pass/fail)</li>
+<li>Check product exists: (pass/fail)</li>
+<li>Check stock available: (pass/fail)</li>
+</ul>
+<p><strong>BACKEND DATABASE OPERATIONS:</strong></p>
+<ul>
+<li>Reads: (what is queried)</li>
+<li>Writes: (what is created)</li>
+<li>Updates: (what is changed)</li>
+</ul>
+<p><strong>BACKEND RESPONSE:</strong></p>
+<ul>
+<li>Status code: (number)</li>
+<li>Body contains: (describe response)</li>
+</ul>
+<p><strong>FRONTEND RECEIVES:</strong></p>
+<ul>
+<li>response.ok: (true/false)</li>
+<li>Shows message: (describe)</li>
+<li>Updates display: (describe)</li>
+</ul>
+<p><strong>FINAL DATABASE STATE:</strong></p>
+<ul>
+<li>products array: (describe changes)</li>
+<li>orders array: (describe changes)</li>
+</ul>
+<p><strong>SUMMARY:</strong>
+(Explain what changed and why)</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="tips-for-success">Tips for Success<a href="#tips-for-success" class="hash-link" aria-label="Direct link to Tips for Success" title="Direct link to Tips for Success">​</a></h2>
+<p><strong>Before You Start:</strong></p>
+<ol>
+<li>Copy all four files into your IDE</li>
+<li>Read through each file carefully</li>
+<li>Add your own comments to help understand</li>
+<li>Try changing things to see what happens</li>
+</ol>
+<p><strong>While Working:</strong></p>
+<ol>
+<li>Keep all files open for easy switching</li>
+<li>Follow the console.log statements</li>
+<li>Be specific in your answers with exact values</li>
+<li>Draw diagrams if helpful</li>
+<li>Think about what each side knows</li>
+</ol>
+<p><strong>When Tracing Flows:</strong></p>
+<ol>
+<li>Start with the user - what do they see?</li>
+<li>Follow to frontend - what does app.js do?</li>
+<li>Cross to backend - what does server.js receive?</li>
+<li>Watch the data change - what happens in database?</li>
+<li>Follow back to frontend - what does app.js receive?</li>
+<li>End with the user - what do they see?</li>
+</ol>
+<p><strong>Understanding the Code:</strong></p>
+<ul>
+<li>index.html: Structure (form, buttons, containers)</li>
+<li>style.css: Appearance (colors, spacing, layouts)</li>
+<li>app.js: Frontend logic (collect data, send requests, update display)</li>
+<li>server.js: Backend logic (validate, process, manage database, send responses)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="expected-time">Expected Time<a href="#expected-time" class="hash-link" aria-label="Direct link to Expected Time" title="Direct link to Expected Time">​</a></h2>
+<p><strong>Reading and tracing scenarios:</strong> 2-3 hours
+<strong>If running the code:</strong> 3-4 hours (includes setup time)</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="frequently-asked-questions">Frequently Asked Questions<a href="#frequently-asked-questions" class="hash-link" aria-label="Direct link to Frequently Asked Questions" title="Direct link to Frequently Asked Questions">​</a></h2>
+<p><strong>Q: I opened index.html in my browser and got errors. What is wrong?</strong></p>
+<p>A: The backend server is not running. Either just read and trace the code on paper, or follow the setup steps to install Node.js and run both servers.</p>
+<p><strong>Q: Do I need to install Node.js?</strong></p>
+<p>A: Only if you want to actually run the code. You can complete this task by reading and tracing without running anything.</p>
+<p><strong>Q: Which approach should I choose?</strong></p>
+<p>A: Choose reading-only if you want to focus on concepts. Choose running if you are comfortable with technical setup. Both teach the same concepts.</p>
+<p><strong>Q: Common errors when running:</strong></p>
+<ol>
+<li>node is not recognized: Install Node.js</li>
+<li>Cannot find module express: Run npm install express cors</li>
+<li>Port 3000 already in use: Change PORT in server.js to 3001</li>
+<li>Frontend shows errors: Make sure both servers are running</li>
+</ol>
+<p><strong>Q: How do I stop the servers?</strong></p>
+<p>A: Press Ctrl+C (Windows/Linux) or Cmd+C (Mac) in each terminal window.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="what-you-will-learn">What You Will Learn<a href="#what-you-will-learn" class="hash-link" aria-label="Direct link to What You Will Learn" title="Direct link to What You Will Learn">​</a></h2>
+<p>After completing this task:</p>
+<ul>
+<li>Understand how frontend and backend work together</li>
+<li>See how HTTP requests and responses work</li>
+<li>Know why backend validation is critical</li>
+<li>Trace data flow through the entire system</li>
+<li>Identify security considerations</li>
+<li>Communicate effectively with developers</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="remember">Remember<a href="#remember" class="hash-link" aria-label="Direct link to Remember" title="Direct link to Remember">​</a></h2>
+<ul>
+<li>This is for learning, not production use</li>
+<li>Feel free to experiment</li>
+<li>Ask questions and discuss with teammates</li>
+<li>The goal is understanding, not memorizing syntax</li>
+<li>Focus on how pieces work together</li>
+</ul>
+<p>Good luck!</p></div></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/crossteam-collab/docs/BE/Task/be-task8"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Databases</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#part-3-your-task---trace-three-scenarios" class="table-of-contents__link toc-highlight">Part 3: Your Task - Trace Three Scenarios</a><ul><li><a href="#scenario-1-successful-order" class="table-of-contents__link toc-highlight">Scenario 1: Successful Order</a></li><li><a href="#scenario-2-insufficient-stock" class="table-of-contents__link toc-highlight">Scenario 2: Insufficient Stock</a></li><li><a href="#scenario-3-product-does-not-exist" class="table-of-contents__link toc-highlight">Scenario 3: Product Does Not Exist</a></li></ul></li><li><a href="#part-4-answer-these-questions" class="table-of-contents__link toc-highlight">Part 4: Answer These Questions</a><ul><li><a href="#understanding-file-structure" class="table-of-contents__link toc-highlight">Understanding File Structure</a></li><li><a href="#understanding-frontend-backend-communication" class="table-of-contents__link toc-highlight">Understanding Frontend-Backend Communication</a></li><li><a href="#understanding-validation" class="table-of-contents__link toc-highlight">Understanding Validation</a></li><li><a href="#understanding-database-operations" class="table-of-contents__link toc-highlight">Understanding Database Operations</a></li><li><a href="#understanding-http" class="table-of-contents__link toc-highlight">Understanding HTTP</a></li><li><a href="#understanding-styling" class="table-of-contents__link toc-highlight">Understanding Styling</a></li><li><a href="#real-world-considerations" class="table-of-contents__link toc-highlight">Real-World Considerations</a></li></ul></li><li><a href="#part-5-bonus-challenge-optional" class="table-of-contents__link toc-highlight">Part 5: Bonus Challenge (Optional)</a></li><li><a href="#answer-template" class="table-of-contents__link toc-highlight">Answer Template</a></li><li><a href="#tips-for-success" class="table-of-contents__link toc-highlight">Tips for Success</a></li><li><a href="#expected-time" class="table-of-contents__link toc-highlight">Expected Time</a></li><li><a href="#frequently-asked-questions" class="table-of-contents__link toc-highlight">Frequently Asked Questions</a></li><li><a href="#what-you-will-learn" class="table-of-contents__link toc-highlight">What You Will Learn</a></li><li><a href="#remember" class="table-of-contents__link toc-highlight">Remember</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://discord.gg/start-school" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/start-school" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 StartSchool. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
