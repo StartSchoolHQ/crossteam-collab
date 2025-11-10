@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkstart_school_wiki=self.webpackChunkstart_school_wiki||[]).push([[817],{5282:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Backend","slug":"/category/backend","permalink":"/crossteam-collab/docs/category/backend","sidebar":"beSidebar","navigation":{"next":{"title":"Intro","permalink":"/crossteam-collab/docs/BE/be-intro"}}}}')}}]);
