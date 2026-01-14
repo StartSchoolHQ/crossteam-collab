@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Frontend Development',
-  favicon: 'img/StartSchool_round_pink.png',
+  favicon: 'img/Start-School-logo-PFP.png',
 
   future: {
     v4: {
